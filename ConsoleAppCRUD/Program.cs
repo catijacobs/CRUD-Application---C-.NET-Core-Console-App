@@ -10,8 +10,11 @@ namespace ConsoleAppCRUD
         static void Main(string[] args)
         {
             Employees employees = new Employees();
-            EmployeeRecordsView employeeRecordView = EmployeeObjectFactory.EmployeeRecordsViewObject(employees);
+            EmployeeRecordsView employeeRecordsView = EmployeeObjectFactory.EmployeeRecordsViewObject(employees);
 
+            Console.WriteLine(EmployeeCommonOutputText.GetApplicationHeading());
+
+            employeeRecordsView.RunRecordsView();
 
             Console.ReadKey();
         }
