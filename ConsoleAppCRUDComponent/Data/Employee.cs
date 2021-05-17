@@ -23,76 +23,17 @@ namespace ConsoleAppCRUDComponent.Data
             }
         }
 
-        public string FirstName
-        {
-            get
-            {
-                return _firstName;
-            }
-            set
-            {
-                _firstName = value;
-            }
-        }
+        public string FirstName { get; set; }
 
-        public string LastName
-        {
-            get
-            {
-                return _lastName;
-            }
-            set
-            {
-                _lastName = value;
-            }
-        }
-        public decimal AnnualSalary
-        {
-            get
-            {
-                return _annualSalary;
-            }
-            set
-            {
-                _annualSalary = value;
-            }
-        }
-        public char Gender
-        {
-            get
-            {
-                return _gender;
-            }
-            set
-            {
-                _gender = value;
-            }
-        }
-        public bool IsManager
-        {
-            get
-            {
-                return _isManager;
-            }
-            set
-            {
-                _isManager = value;
-            }
-        }
+        public string LastName { get; set; }
+        public decimal AnnualSalary { get; set; }
+        public char Gender { get; set; }
+        public bool IsManager { get; set; }
 
         public Employee()
         {
             _nextId++;
             _id = _nextId++;
-        }
-
-        public Employee (string firstName, string lastName, decimal annualSalary, char gender, bool isManager):this()
-        {
-        _firstName = firstName;
-        _lastName = lastName;
-        _annualSalary = annualSalary;
-        _gender = gender;
-        _isManager = isManager;
         }
 
         public string GetEmployeeInformation()

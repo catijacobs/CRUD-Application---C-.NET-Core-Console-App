@@ -9,7 +9,17 @@ namespace ConsoleAppCRUDComponent
     {
         public static Employee CreateNewEmployeeObject(string firstName, string lastName, decimal annualSalary, char gender, bool isManager)
         {
-            return new Employee(firstName, lastName, annualSalary, gender, isManager);
+            return new Employee
+            {
+                FirstName = firstName,
+                LastName = lastName,
+                AnnualSalary = annualSalary,
+                Gender = gender,
+                IsManager = isManager
+
+            };
+
+
         }
     }
 }
