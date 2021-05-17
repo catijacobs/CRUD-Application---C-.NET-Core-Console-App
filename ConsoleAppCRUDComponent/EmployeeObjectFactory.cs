@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using ConsoleAppCRUDComponent.Data;
+using ConsoleAppCRUDComponent.Views;
 
 namespace ConsoleAppCRUDComponent
 {
@@ -19,7 +20,11 @@ namespace ConsoleAppCRUDComponent
 
             };
 
+        }
 
+        public static EmployeeRecordsView EmployeeRecordsViewObject(Employees employees)
+        {
+            return new EmployeeRecordsView(employees);
         }
     }
 }

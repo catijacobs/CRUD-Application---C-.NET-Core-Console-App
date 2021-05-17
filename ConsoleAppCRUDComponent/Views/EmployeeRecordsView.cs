@@ -16,6 +16,9 @@ namespace ConsoleAppCRUDComponent.Views
 
         public void RunRecordsView()
         {
+            Console.WriteLine(EmployeeCommonOutputText.GetColumnHeadings());
+            Console.WriteLine();
+
             foreach(Employee emp in _employees)
             {
                 Console.Write(emp.GetEmployeeInformation());
