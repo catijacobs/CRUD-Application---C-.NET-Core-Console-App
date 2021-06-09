@@ -9,7 +9,9 @@ namespace ConsoleAppCRUD
     {
         static void Main(string[] args)
         {
+
             Employees employees = new Employees();
+
             EmployeeRecordsView employeeRecordsView = EmployeeObjectFactory.EmployeeRecordsViewObject(employees);
 
             Console.WriteLine(EmployeeCommonOutputText.GetApplicationHeading());
