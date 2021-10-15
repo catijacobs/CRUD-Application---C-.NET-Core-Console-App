@@ -9,11 +9,7 @@ namespace ConsoleAppCRUDComponent.Data
         private static int _nextId = 0;
         private int _id = 0;
 
-        private string _firstName = string.Empty;
-        private string _lastName = string.Empty;
-        private decimal _annualSalary = 0;
-        private char _gender = '0';
-        private bool _isManager = false;
+ 
 
         public int Id
         {
